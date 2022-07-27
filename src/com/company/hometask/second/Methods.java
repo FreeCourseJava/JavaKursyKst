@@ -2,9 +2,8 @@ package com.company.hometask.second;
 
 public class Methods {
 
-
     public static void main(String[] args) {
-        System.out.println(maxInteger(-7, Integer.MAX_VALUE));
+        System.out.println(maxInteger(-5,-4 ));
     }
 
 
@@ -31,6 +30,8 @@ public class Methods {
         int result = 0;
         result = maxValue + num;
         if (maxValue >= 0 && num >= 0 && result < 0) {
+            return 0;
+        } else if (maxValue < 0 && num < 0 && result > 0) {
             return 0;
         } else {
             return result;
