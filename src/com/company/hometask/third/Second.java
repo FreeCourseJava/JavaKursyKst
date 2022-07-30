@@ -1,7 +1,7 @@
 package com.company.hometask.third;
 
 public class Second {
-    public final int[] sortedMassive = bubbleSort(yearsOfTatarstan().length, yearsOfTatarstan());
+    public final int[] sortedMassive = bubbleSort(yearsOfTatarstan());
 
     // 2. Составить массив из значимых годов Республики
     // Татартсан (любые 20), добавить их в массив в
@@ -15,15 +15,15 @@ public class Second {
 
     public static void sortedYears() {
 
-        int[] result = bubbleSort(yearsOfTatarstan().length, yearsOfTatarstan());
+        int[] result = bubbleSort(yearsOfTatarstan());
         for (int i = 0; i < yearsOfTatarstan().length; i++) {
             System.out.println(result[i]);
         }
     }
 
-    private static int[] bubbleSort(int massiveLength, int[] massive) {
-        for (int i = 0; i < massiveLength - 1; i++) {
-            for (int j = massiveLength - 1; j > i; j--) {
+    private static int[] bubbleSort(int[] massive) {
+        for (int i = 0; i < massive.length - 1; i++) {
+            for (int j = massive.length - 1; j > i; j--) {
                 if (massive[j - 1] > massive[j]) {
                     int temp = massive[j - 1];
                     massive[j - 1] = massive[j];

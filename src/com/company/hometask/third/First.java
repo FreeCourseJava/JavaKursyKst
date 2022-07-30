@@ -15,17 +15,13 @@ public class First {
     public static int countTheNumbers(int massiveLength, int otherNumber) {
         int result;
         int[] massive = new int[massiveLength], resultMassive;
-        if (massiveLength == 0) {
-            return 0;
-        } else {
-            for (int i = 0; i < massiveLength; i++) {
-                massive[i] = Integer.MIN_VALUE;
-            }
-            resultMassive = changeMassive(massiveLength, otherNumber, massive);
-            result = checkForAnother(massiveLength, otherNumber, resultMassive);
-        }
-        return result;
 
+        for (int i = 0; i < massiveLength; i++) {
+            massive[i] = Integer.MIN_VALUE;
+        }
+        resultMassive = changeMassive(massiveLength, otherNumber, massive);
+        result = checkForAnother(massiveLength, otherNumber, resultMassive);
+        return result;
     }
 
     private static int[] changeMassive(int massiveLength, int otherNumber, int[] massive) {
