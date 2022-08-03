@@ -43,7 +43,7 @@ public class HomeList {
         return length;
     }
 
-    public int getAllSquare() {
+    public int getSquaresOfHomes() {
         Home home;
         int result = 0;
         Node temp = head;

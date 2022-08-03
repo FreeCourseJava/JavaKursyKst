@@ -1,11 +1,10 @@
 package com.company.hometask.fifth.objects;
 
 public class Home {
-    private long homeId;
-    private int length, width;
+    private final int length;
+    private final int width;
 
-    public Home(long homeId, int length, int width) {
-        this.homeId = homeId;
+    public Home( int length, int width) {
         this.length = length;
         this.width = width;
     }

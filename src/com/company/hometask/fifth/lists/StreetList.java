@@ -1,6 +1,5 @@
 package com.company.hometask.fifth.lists;
 
-import com.company.hometask.fifth.objects.Home;
 import com.company.hometask.fifth.objects.Street;
 
 public class StreetList {
@@ -44,14 +43,14 @@ public class StreetList {
         return length;
     }
 
-    public int getAllSquare() {
+    public int getSumOfSquaresOfStreetNode() {
        Street street;
         int result = 0;
         StreetList.Node temp = head;
 
         while (temp != null) {
             street = temp.data;
-            result += street.getSquare();
+            result += street.getSquareOfStreet();
             temp = temp.next;
         }
         return result;

@@ -4,15 +4,12 @@ import com.company.hometask.fifth.lists.HomeList;
 
 public class Street {
     // Указывается номер улицы и название
-    private String name;
-    private boolean isHigh;
-    private int distance, middleWidth;
-    private HomeList homeList = new HomeList();
+    private final int distance;
+    private final int middleWidth;
+    private final HomeList homeList = new HomeList();
 
 
-    public Street(String name, boolean isHigh, int distance, int middleWidth) {
-        this.name = name;
-        this.isHigh = isHigh;
+    public Street( int distance, int middleWidth) {
         this.distance = distance;
         this.middleWidth = middleWidth;
     }
@@ -24,11 +21,11 @@ public class Street {
     public void printHomes() {
         homeList.printNode();
     }
-    public int getAllSquare(){
-        return homeList.getAllSquare();
+    public int getHomesSquaresFromOneStreet(){
+        return homeList.getSquaresOfHomes();
     }
 
-    public int getSquare() {
+    public int getSquareOfStreet() {
         return distance * middleWidth;
     }
 
