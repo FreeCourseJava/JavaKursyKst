@@ -8,7 +8,6 @@ public class Street {
     private final int middleWidth;
     private final HomeList homeList = new HomeList();
 
-
     public Street( int distance, int middleWidth) {
         this.distance = distance;
         this.middleWidth = middleWidth;
@@ -32,5 +31,4 @@ public class Street {
     public int getHomesCount(){
         return homeList.getLength();
     }
-
 }

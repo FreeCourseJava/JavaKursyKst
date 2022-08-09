@@ -5,7 +5,6 @@ public class Park {
     private final int length;
     private final int width;
 
-
     public Park(String name , int length , int width){
         this.name = name;
         this.length = length;
@@ -19,6 +18,4 @@ public class Park {
     public int getSquareOfOnePark(){
         return length*width;
     }
-
-
 }

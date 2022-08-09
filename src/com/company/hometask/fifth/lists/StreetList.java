@@ -17,9 +17,9 @@ public class StreetList {
 
     // Function to add a new Node
     public void pushNode(Street data) {
-        Node new_node = new Node(data);
-        new_node.next = head;
-        head = new_node;
+        Node newNode = new Node(data);
+        newNode.next = head;
+        head = newNode;
     }
 
     //Displaying the elements in the list

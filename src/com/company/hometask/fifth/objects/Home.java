@@ -1,6 +1,7 @@
 package com.company.hometask.fifth.objects;
 
 public class Home {
+
     private final int length;
     private final int width;
 
@@ -12,6 +13,4 @@ public class Home {
     public int getSquare() {
         return length * width;
     }
-
-
 }
