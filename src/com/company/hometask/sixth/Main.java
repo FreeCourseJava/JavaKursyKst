@@ -20,5 +20,6 @@ public class Main {
             System.out.println(parent);
         }
 
+        System.out.println(city.getSquare());
     }
 }

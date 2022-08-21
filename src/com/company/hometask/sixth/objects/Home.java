@@ -19,24 +19,8 @@ public class Home extends Parent {
         this.width = width;
     }
 
-
-    public void setArray(Object object) {
-        if (object instanceof Home) {
-            arrayHome.add(object);
-            System.out.println("this is home");
-        }else {
-            arrayHome.add(object);
-            System.out.println("this is other object!");
-        }
+    @Override
+    public int getSquare() {
+        return width*length;
     }
-
-
-    public Object getObjects(int index) {
-        return arrayHome.get(index);
-    }
-
-    public int getSquare(){
-        return length*width;
-    }
-
 }

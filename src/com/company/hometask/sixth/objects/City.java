@@ -9,8 +9,6 @@ public class City extends Parent {
 
     private final ObjectList arrayCity = new ObjectList();
 
-    private final ObjectList arrayStreetToCity = new ObjectList();
-
     public City(){
         this.size = 10;
     }
@@ -19,26 +17,7 @@ public class City extends Parent {
         this.size = size;
     }
 
-
-    public void setArray(Object object) {
-        if (object instanceof City) {
-            arrayCity.add(object);
-            System.out.println("this is city!");
-        } else if (object instanceof Street) {
-            arrayStreetToCity.add(object);
-            System.out.println("add street to city!");
-        } else {
-            arrayCity.add(object);
-            System.out.println("this is other object!");
-        }
-    }
-
-
-    public Object getObjects(int index) {
-        return arrayCity.get(index);
-    }
-
-
+    @Override
     public int getSquare() {
         return size;
     }
