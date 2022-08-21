@@ -1,9 +1,9 @@
 package com.company.hometask.sixth.objects;
 
-import com.company.hometask.sixth.Measurable;
 import com.company.hometask.sixth.ObjectList;
+import com.company.hometask.sixth.Parent;
 
-public class City implements Measurable {
+public class City extends Parent {
 
     private final int size;
 
@@ -11,11 +11,15 @@ public class City implements Measurable {
 
     private final ObjectList arrayStreetToCity = new ObjectList();
 
+    public City(){
+        this.size = 10;
+    }
+
     public City(int size) {
         this.size = size;
     }
 
-    @Override
+
     public void setArray(Object object) {
         if (object instanceof City) {
             arrayCity.add(object);
@@ -29,12 +33,12 @@ public class City implements Measurable {
         }
     }
 
-    @Override
+
     public Object getObjects(int index) {
         return arrayCity.get(index);
     }
 
-    @Override
+
     public int getSquare() {
         return size;
     }
